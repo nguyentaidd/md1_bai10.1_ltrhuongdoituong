@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="vongT.js"></script>
+</head>
+<body>
+<canvas id="myCanvas" width="1369px" height="768px" style="border: 1px solid #d3d3d3;"></canvas>
+</body>
+<script>
+    let ctx=document.getElementById("myCanvas").getContext('2d')
+    let radius = Math.floor(Math.random() * 100);
+    let x = Math.floor(Math.random() * 450);
+    let y = Math.floor(Math.random() * 450);
+    let circle = new vongT(x, y, radius);
+    circle.drawCircle(ctx);
+
+</script>
+
+</html>

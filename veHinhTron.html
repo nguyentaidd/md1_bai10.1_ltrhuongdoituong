@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="Circle.js"></script>
+</head>
+<body>
+<canvas id="myCanvas" width="800" height="500" style="border: 1px solid black"></canvas>
+<script>
+    let canvas = document.getElementById('myCanvas');
+    let ctx = canvas.getContext('2d')
+    ctx.beginPath()
+    ctx.arc(400,300,100,0,2*Math.PI, true)
+    ctx.stroke()
+    ctx.closePath()
+    let circle = new Circle(2)
+    let radius = circle.getRadius();
+    let area = circle.getArea();
+
+        alert("Bán kính là: "+radius+"; Diện tích hình tròn: "+area)
+
+</script>
+
+</body>
+</html>
